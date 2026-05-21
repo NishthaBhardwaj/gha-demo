@@ -1,4 +1,4 @@
-name: Hello world
+name: Github Action Demo
 on:
   workflow_dispatch
 jobs:
@@ -24,5 +24,13 @@ jobs:
     steps:
     - name: Deploy phase
       run: echo "Deploying the app"
+  action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+      - name: Print intex.html
+        run: cat index.html
+  
   
     
