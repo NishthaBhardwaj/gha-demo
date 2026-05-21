@@ -9,4 +9,6 @@ jobs:
       APP_ENV: "test"
     steps:
     - name: Connecting to ENV
+      env:
+        APP_ENV: "prod"
       run: echo "APP in connecting to $APP_ENV"
