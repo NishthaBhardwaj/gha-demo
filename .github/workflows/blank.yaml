@@ -7,6 +7,8 @@ jobs:
     steps:
     - name: Build step
       run: echo "A demo build"
+    - name: Print name
+      run: echo "My name is ${{vars.MY_NAME}}"
     
   test:
     runs-on: ubuntu-latest
