@@ -1,0 +1,11 @@
+name: Hello world
+on:
+  workflow_dispatch:
+jobs:
+  random-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "hello world"
+  
+    
