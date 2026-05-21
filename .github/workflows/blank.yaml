@@ -9,6 +9,8 @@ jobs:
       run: echo "A demo build"
     - name: Print name
       run: echo "My name is ${{vars.MY_NAME}}"
+    - name: My Secrets
+      run: "my secrets ${{secrets.DOCKER_PASSWORD}}"
     
   test:
     runs-on: ubuntu-latest
